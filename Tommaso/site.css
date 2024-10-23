@@ -1,0 +1,58 @@
+/*Whole body and main functions*/
+/*Tags are given to the whole html element 
+(since only one is present)*/
+/*The body is created as a 1x3 matrix with the column N.1 and N.3 used
+as lateral padding and the center one used as a sort of centering content
+for the input group*/
+body{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+main{
+    margin-top: 3vw;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+/*Input group of data*/
+.input-group{
+    margin-top:2vw;
+}
+
+
+/*List of items and single item*/
+/*it is created as 1x4 matrix with the first column (the biggest one) occupied by the text
+and the other 3 smaller one by, in order, the check icon, the modify icon and the delete icon*/
+.list-item{
+    display: grid;
+    grid-template-columns: 12fr 1fr 1fr 1fr;
+    align-items: center;
+    padding-top: 1.5vw;
+}
+
+/*sets the icon size*/
+.icon {
+    text-align: center;
+    font-size: 0.2vw;
+}
+
+/*sets the image size to a pixel (non scalar value) value*/
+.img{
+    width: 30px;
+    height: 30px;
+}
+
+/*Buttons to clear list*/
+/*Displayed within a flex to center it on screen*/
+.delete-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clear-btn{
+    margin-top:1.5vw;
+}
+
